@@ -1,10 +1,10 @@
 import './Todo.css'
 
-function Todo(props) {
-    console.log(props)
+function Todo({title}) {
+    console.log(title)
     return (
       <div className="todo">
-        <h2>Finish the course</h2>
+        <h2>{ title }</h2>
         <button>Delete</button>
       </div>
  )
