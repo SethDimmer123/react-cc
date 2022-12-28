@@ -1,3 +1,5 @@
+import './Todo.css'
+
 function Todo() {
     return (
       <div>
