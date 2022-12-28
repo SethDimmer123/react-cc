@@ -1,6 +1,7 @@
 import './App.css';
 import Todo from './components/Todo.jsx'
 import Title from './components/Title.jsx'
+import Modal from './components/Modal.jsx';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Todo />
       <Todo />
       </div>
+      <Modal />
     </div>
   );
 }
