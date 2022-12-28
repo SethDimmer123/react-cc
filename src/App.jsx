@@ -8,11 +8,11 @@ function App() {
     <>
       <Title />
       <div className='todo__wrapper'>
-      <Todo />
-      <Todo />
-      <Todo />
+      <Todo title ="Finish the course"/>
+      <Todo title ="Finish the Interview section"/>
+      <Todo title ="Land 100k job"/>
       </div>
-      <Modal />
+      {/* <Modal /> */}
     </>
   );
 }
