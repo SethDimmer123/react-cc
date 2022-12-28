@@ -5,7 +5,7 @@ import Modal from './components/Modal.jsx';
 
 function App() {
   return (
-    <div>
+    <>
       <Title />
       <div className='todo__wrapper'>
       <Todo />
@@ -13,7 +13,7 @@ function App() {
       <Todo />
       </div>
       <Modal />
-    </div>
+    </>
   );
 }
 
