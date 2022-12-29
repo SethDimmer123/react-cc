@@ -6,7 +6,7 @@ function Todo({title}) {
   }
     return (
       <div className="todo">
-        <h2>{ title }</h2>
+        <p>{ title }</p>
         <button onClick={ () =>deleteTodo(1)}>Delete</button>
       </div>
  )
