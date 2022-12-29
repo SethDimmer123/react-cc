@@ -1,17 +1,18 @@
 import './Todo.css'
 
 function Todo({title, paragraph}) {
-    console.log(title)
+  function deleteTodo() {
+    console.log('deleteTodo()')
+  }
     return (
       <div className="todo">
         <h2>{ title }</h2>
         <p>{paragraph}</p>
-        <button onClick={() => console.log('clicked')}>Delete</button>
+        <button onClick={deleteTodo()}>Delete</button>
       </div>
  )
 }
 
 export default Todo
 
-
-// one line of code that is why the console.log still works on line 9 
+// this is bad i only want to execute deleteTodo when i click it
