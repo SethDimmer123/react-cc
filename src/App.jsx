@@ -5,7 +5,8 @@ import Modal from './components/Modal.jsx';
 
 function App() {
   return (
-    <>
+    // the empty div tag is no use so that is the short hand
+    <>   
       <Title />
       <div className='todo__wrapper'>
       <Todo title ="Finish the course"
