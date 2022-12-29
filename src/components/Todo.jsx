@@ -6,11 +6,12 @@ function Todo({title, paragraph}) {
       <div className="todo">
         <h2>{ title }</h2>
         <p>{paragraph}</p>
-        <button onClick={() => {
-          console.log('clicked')
-        }}>Delete</button>
+        <button onClick={() => console.log('clicked')}>Delete</button>
       </div>
  )
 }
 
 export default Todo
+
+
+// one line of code that is why the console.log still works on line 9 
