@@ -5,7 +5,7 @@ import Modal from './components/Modal.jsx';
 import React, { useState } from 'react';
 
 function App() {
-useState(false)
+const [showModal] = useState(false)
 
 
   return (
