@@ -23,7 +23,7 @@ function App() {
       <Todo title ="Finish the Interview section"/>
       <Todo title ="Land 100k job"/>
       </div>
-      {true ? <Modal title ="Confirm Delete?" /> : null}
+      {false ? <Modal title ="Confirm Delete?" /> : null}
 
     </>
   );
