@@ -20,7 +20,7 @@ function App() {
       <Todo title ="Finish the Interview section"/>
       <Todo title ="Land 100k job"/>
       </div>
-      <Modal title ="Are you sure you want to delete?" />
+      <Modal title ="Confirm Delete?" />
 
     </>
   );
