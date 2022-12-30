@@ -4,7 +4,7 @@ import Title from './components/Title.jsx'
 import Modal from './components/Modal.jsx';
 
 function App() {
-  let isModalOpen = true;
+  let isModalOpen = false;
   return (
     // the empty div tag is no use so that is the short hand
     <>
