@@ -5,7 +5,7 @@ import Modal from './components/Modal.jsx';
 import React, { useState } from 'react';
 
 function App() {
-const [showModal] = useState(false)
+const [showModal] = useState(true)
 
 
   return (
@@ -23,7 +23,7 @@ const [showModal] = useState(false)
       <Todo title ="Finish the Interview section"/>
       <Todo title ="Land 100k job"/>
       </div>
-      {false ? <Modal title ="Confirm Delete?" /> : null}
+      {showModal ? <Modal title ="Confirm Delete?" /> : null}
 
     </>
   );
