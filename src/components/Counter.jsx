@@ -1,19 +1,26 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 
 function Counter() {
-    const [Counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(0)
     function incrementCounter() {
-        setCounter(() => Counter + 1)
+        setCounter((prevcounter) => prevcounter + 1)
+        setCounter((prevcounter) => prevcounter + 1)
 
     }
+
+    // if i just want to change its value if the value
+    // depends on the previous value then i always
+    // want to use a callback function
 
     function decrementCounter() {
-        setCounter(Counter - 1)
+        setCounter((prevcounter) => prevcounter -1)
+        setCounter((prevcounter) => prevcounter -1)
     }
-    return(
+
+    return (
         <div>
             <button onClick={decrementCounter}>-</button>
-            {Counter}
+            {counter}
             <button onClick={incrementCounter}>+</button>
         </div>
     )
