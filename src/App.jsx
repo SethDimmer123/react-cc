@@ -5,8 +5,7 @@ import Modal from './components/Modal.jsx';
 import React, { useState } from 'react';
 
 function App() {
-const [showModal, setShowModal] = useState(true)
-// setShowModal(false)
+const [showModal, setShowModal] = useState(false)
   return (
     // the empty div tag is no use so that is the short hand
     <>
