@@ -3,14 +3,14 @@ import Todo from './components/Todo.jsx'
 import Title from './components/Title.jsx'
 import Modal from './components/Modal.jsx';
 import React, { useState } from 'react';
-import Counter from "./components/Counter.jsx"
+// import Counter from "./components/Counter.jsx"
 
 function App() {
 
 
 
 
-return <Counter />
+// return <Counter />
 
 
 
