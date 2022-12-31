@@ -17,6 +17,8 @@ function Counter() {
         setCounter((prevcounter) => prevcounter -1)
     }
 
+    // this is exactly how we update arrays and objects
+
     return (
         <div>
             <button onClick={decrementCounter}>-</button>
