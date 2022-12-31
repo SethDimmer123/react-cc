@@ -6,9 +6,7 @@ import React, { useState } from 'react';
 
 function App() {
 const [showModal, setShowModal] = useState(true)
-setShowModal(false)
-
-
+// setShowModal(false)
   return (
     // the empty div tag is no use so that is the short hand
     <>
