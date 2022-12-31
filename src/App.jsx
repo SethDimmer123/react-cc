@@ -3,9 +3,21 @@ import Todo from './components/Todo.jsx'
 import Title from './components/Title.jsx'
 import Modal from './components/Modal.jsx';
 import React, { useState } from 'react';
+import Counter from "./components/Counter.jsx"
 
 function App() {
+
+
+
+
+// return <Counter />
+
+
+
 const [showModal, setShowModal] = useState(false)
+
+
+
   return (
     // the empty div tag is no use so that is the short hand
     <>
@@ -14,7 +26,7 @@ const [showModal, setShowModal] = useState(false)
         <input type="text" onChange={(event) => {
           console.log(event.target.value)
         }} />
-        <button>Add todo</button>
+        <button onClick={() => setShowModal(true)}>Add todo</button>
       </div>
       <div className='todo__wrapper'>
       <Todo title ="Finish the course" />
