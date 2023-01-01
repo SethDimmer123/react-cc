@@ -25,7 +25,7 @@ function onModalConfirm() {
 
 useEffect(() => {
   console.log('on mount')
-},{})
+},[])
 
 
 
