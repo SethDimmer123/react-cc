@@ -6,10 +6,12 @@ import Counter from "./components/Counter.jsx"
 import React, { useState } from 'react';
 
 function App() {
-
-
-
 const [showModal, setShowModal] = useState(false)
+
+function onTodoDelete() {
+  setShowModal(true)
+  console.log('onTodoDelete()')
+}
 
 
 
@@ -24,11 +26,11 @@ const [showModal, setShowModal] = useState(false)
         <button onClick={() => setShowModal(true)}>Add todo</button>
       </div>
       <div className='todo__wrapper'>
-      <Todo title ="Finish the course" />
-      <Todo title ="Finish the Interview section"/>
-      <Todo title ="Land 100k job"/>
+      <Todo onTodoDelete={onTodoDelete} title ="Finish the course" />
+      <Todo onTodoDelete={onTodoDelete}  title ="Finish the Interview section"/>
+      <Todo onTodoDelete={onTodoDelete}  title ="Land 100k job"/>
       </div>
-      {showModal ? <Modal title ="Confirm Delete?" /> : null}
+      {showModal && <Modal title ="Confirm Delete?" />}
 
     </>
   );
