@@ -10,22 +10,31 @@ const [showModal, setShowModal] = useState(false)
 
 function onTodoDelete() {
   setShowModal(true)
-  console.log('onTodoDelete()')
+  // console.log('onTodoDelete()')
 }
 
 function onModalCancel() {
   setShowModal(false)
-  console.log('onModalCancel()')
+
 }
 
 function onModalConfirm() {
   setShowModal(false)
   console.log('onModalConfirm()')
 }
+useEffect(() => {
+  console.log('ONLY on mount')
+},[])
 
 useEffect(() => {
-  console.log('on mount')
-},[])
+  console.log(`on mount AND on ${showModal} change`)
+},[showModal])
+
+useEffect(() => {
+  console.log('EVERY render')
+})
+
+
 
 
 
