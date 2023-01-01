@@ -13,6 +13,17 @@ function onTodoDelete() {
   console.log('onTodoDelete()')
 }
 
+function onModalCancel() {
+  setShowModal(false)
+  console.log('onModalCancel()')
+}
+
+function onModalConfirm() {
+  setShowModal(false)
+  console.log('onModalConfirm()')
+}
+
+
 
 
   return (
@@ -30,7 +41,7 @@ function onTodoDelete() {
       <Todo onTodoDelete={onTodoDelete}  title ="Finish the Interview section"/>
       <Todo onTodoDelete={onTodoDelete}  title ="Land 100k job"/>
       </div>
-      {showModal && <Modal title ="Confirm Delete?" />}
+      {showModal && <Modal onModalCancel={onModalCancel}  onModalConfirm={onModalConfirm} title ="Confirm Delete?" />}
 
     </>
   );
