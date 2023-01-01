@@ -15,7 +15,7 @@ function Counter() {
         <div>
             <button onClick={addMinus}>-</button>
             <button onClick={addPlus}>+</button>
-            {arr}
+            {arr.toString()}
         </div>
     );
 }
