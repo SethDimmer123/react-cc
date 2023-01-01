@@ -9,10 +9,6 @@ function App() {
 
 
 
-
-
-return <Counter />
-
 const [showModal, setShowModal] = useState(false)
 
 
