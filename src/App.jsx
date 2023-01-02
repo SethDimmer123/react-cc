@@ -1,19 +1,20 @@
 import './App.css';
-import Todo from './components/Todo.jsx'
-import Title from './components/Title.jsx'
-import Modal from './components/Modal.jsx';
-import Counter from "./components/Counter.jsx"
-import React, { useState, useEffect } from 'react';
+// import Todo from './components/Todo.jsx'
+// import Title from './components/Title.jsx'
+// import Modal from './components/Modal.jsx';
+// import Counter from "./components/Counter.jsx"
+// import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+
 
 function App() {
-
-
   return (
     <div>
-      
+      <Router>
+        
+      </Router>
     </div>
-  )
-
+  );
   }
 
   export default App;
