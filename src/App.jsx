@@ -4,29 +4,26 @@ import './App.css';
 // import Modal from './components/Modal.jsx';
 // import Counter from "./components/Counter.jsx"
 // import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router,Routes,Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Nav from './components/Nav';
 
 
 
 function App() {
   return (
-    <div>
+    // <div>
       <Router>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-    </div>
+    // </div>
   );
   }
 
