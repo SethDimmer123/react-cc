@@ -12,17 +12,29 @@ function Home() {
 useEffect(() => {
     setTimeout(() => {
         fetchUsers();
-    },2000)
+    },500)
 }, []);
 
 return (
 <div>
-    {users.length > 0
-    ? <h1>{users[0]?.name}</h1>
-    : <h1>Loading...</h1>}
+
 </div>
 )
 }
 
 
 export default Home
+
+
+
+
+
+
+
+
+
+
+
+    {/* {users.length > 0
+    ? <h1>{users[0]?.name}</h1>
+    : <h1>Loading...</h1>} */}
