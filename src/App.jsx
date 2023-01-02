@@ -19,7 +19,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/users/:name" element={<Users />} />
+          <Route path="/users/:username" element={<Users />} />
         </Routes>
       </Router>
     // </div>
