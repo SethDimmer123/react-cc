@@ -2,9 +2,13 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 
 function Home() {
+    async function main () {
+        axios.get("https://jsonplaceholder.typicode.com/users")
+    }
+    
 useEffect(() => {
-    console.log(axios.get("https://jsonplaceholder.typicode.com/users"))
-})
+main();
+}, []);
 return <h1>Home</h1>
 }
 
