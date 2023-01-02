@@ -3,9 +3,9 @@ import axios from 'axios'
 
 function Home() {
     async function main () {
-        axios.get("https://jsonplaceholder.typicode.com/users")
+    console.log(await axios.get("https://jsonplaceholder.typicode.com/users"))
     }
-    
+
 useEffect(() => {
 main();
 }, []);
