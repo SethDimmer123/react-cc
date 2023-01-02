@@ -16,8 +16,11 @@ useEffect(() => {
 }, []);
 
 return (
-<div>
-
+    <div style={{border: "1px solid black"}}>
+    <div>Id</div>
+    <div>Name</div>
+    <div>Email</div>
+    <div>Username</div>
 </div>
 )
 }
