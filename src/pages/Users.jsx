@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 
 
@@ -16,6 +16,7 @@ function Users() {
     },[])
     return (
         <div>
+            <Link to="/">Go back</Link>
             <p>{user.id}</p>
             <p>{user.name}</p>
             <p>{user.email}</p>
