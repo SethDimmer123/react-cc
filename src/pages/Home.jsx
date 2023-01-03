@@ -2,6 +2,7 @@ import React, { useEffect,useState } from 'react'
 import axios from 'axios'
 import User from '../components/User.jsx';
 import { Link } from 'react-router-dom'
+import { render } from '@testing-library/react';
 
 function Home() {
     const [users, setUsers] = useState([])
@@ -13,14 +14,14 @@ function Home() {
     }
 
 useEffect(() => {
+    setTimeout(() => {
+        fetchUsers();
+    }, 2000)
         fetchUsers();
 }, []);
 
-
-
-return (
-    <div>
-    {users.map((user) => (
+function renderUsers() {
+    return users.map((user) => (
         <Link to={`/users/${user.id}`} key={user.id}>
             <User
             id={user.id}
@@ -29,8 +30,14 @@ return (
             username={user.username}
             />
             </Link>
-        ))}
-        </div>
+    ))
+}
+
+
+return (
+    <div>
+    {users.length ? renderUsers() : <h1>Loading...</h1>}
+    </div>
 
 );
 }
