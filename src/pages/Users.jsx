@@ -9,12 +9,19 @@ function Users() {
 
         async function fetchUser(){
         const { data } = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
-        console.log(data)
+        setUser(data)
         }
     useEffect(() => {
         fetchUser()
     },[])
-    return <h1>{id}</h1>
+    return (
+        <div>
+            <p>{user.id}</p>
+            <p>{user.name}</p>
+            <p>{user.email}</p>
+            <p>{user.username}</p>
+        </div>
+    )
 }
 
 export default Users
